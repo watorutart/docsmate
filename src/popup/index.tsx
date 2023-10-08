@@ -9,7 +9,7 @@ import { useGetCurrentUrl } from "~hooks/getCurrentUrl";
 import SwitchButtons from "./switch-buttons";
 import { useRef, useState } from "react";
 
-function IndexPopup() {
+const IndexPopup = () => {
   const urlRef = useRef("");
 
   // プルダウンの値を取得
@@ -44,6 +44,6 @@ function IndexPopup() {
       <Footer></Footer>
     </>
   );
-}
+};
 
 export default IndexPopup;
